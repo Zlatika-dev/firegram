@@ -11,6 +11,7 @@ const UploadForm = () => {
   const changeHandler = (e) => {
     let selected = e.target.files[0];
     //Check if file does exist AND has the right format
+    
     if (selected && types.includes(selected.type)) {
       setFile(selected);
       setError('');
